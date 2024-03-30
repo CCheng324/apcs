@@ -1,0 +1,1 @@
+print("".join(map(str,[chr(ord(i)-7) for i in [x for x in str(input())]])))
