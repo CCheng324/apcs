@@ -1,1 +1,3 @@
-print("".join(map(str,[chr(ord(i)-7) for i in [x for x in str(input())]])))
+list1=[1,2,3,4,5,6]
+list1=[str(x) for x in list1.sort(reverse=True)]
+print(list1)
