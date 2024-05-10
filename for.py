@@ -1,3 +1,8 @@
-list1=[1,2,3,4,5]
-a="".join(map(str,list1))
-print(a)
+# Read the input
+taiwan_time = int(input())
+
+# Calculate the US Mountain Time
+us_mountain_time = (taiwan_time - 15) % 24
+
+# Print the result
+print(us_mountain_time)
