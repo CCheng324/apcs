@@ -1,20 +1,13 @@
-def binary_scarch(arr,target):
-    left=0
+def Binary_search(arr,target):
     right=len(arr)-1
-    
-    while right>=left:
+    left=0
+    while left<=right:
         mid=(right+left)//2
         if arr[mid]==target:
             return mid
-        if arr[mid]>target:
+        elif target<arr[mid]:
             right=mid-1
-        if arr[mid]<target:
+        elif target>arr[mid]:
             left=mid+1
-    return -1
-
-data=[1,2,3,4,5,6,7,8,9]
-aim=3
-if binary_scarch(data,aim)==-1:
-    print(f"{aim}not exist")
-else:
-    print(f"{aim} index={mid}")
+data1=[1,2,3,4,5,8,9,10,11,16,18,19]
+print(Binary_search(data1,9))
